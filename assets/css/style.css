@@ -11,7 +11,7 @@ body {
     max-width: 100%;
 }
 
-header {
+header, footer {
     background: var(--second-color);
 }
 
@@ -36,6 +36,10 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 p {
@@ -80,7 +84,32 @@ li a:hover {
 .Apropos-div {
     display: flex;
     flex-direction: column;
+}
 
+.Apropos-div p, h3 {
+    color: var(--fourth-color);
+    margin-left: 5rem;
+}
+
+.Apropos-content_div {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+    box-shadow: 5px 2.5px 5px var(--fourth-color);
+    background: var(--second-color);
+    width: 50%;
+    height: 15rem;
+}
+
+.Apropos-content_div p, h3 {
+    color: var(--fourth-color);
+    margin: 1.5rem 0rem 1rem 1.5rem;
+}
+
+.Apropos-line {
+    border-right: thick solid;
+    border-color: var(--third-color);
+    margin-right: 2rem;
 }
 
 .Project-div {
