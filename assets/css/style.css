@@ -1,0 +1,119 @@
+:root {
+    --main-color: #CDC8B0; /* var(--main-color) */
+    --second-color: #DAD4BB; /* var(--second-color)*/
+    --third-color: #B4AF9A; /* var(--third-color)*/
+    --fourth-color: #4E4B42; /*var(--fourth-color)*/
+}
+
+body {
+    background: var(--main-color);
+    margin: 0;
+    max-width: 100%;
+}
+
+header {
+    background: var(--second-color);
+}
+
+section {
+    margin-top: 5rem;
+    margin-left: 12rem;
+}
+
+img {
+    width: 84px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    margin-left: 5rem;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+.header-nav_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    margin-right: 5rem;
+    padding: 2.6rem;
+    box-sizing: border-box;
+    border-style: solid;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    border-left-width: 10px;
+    border-right-width: 0;
+    border-color: var(--fourth-color);
+    background: var(--third-color);
+    color: var(--fourth-color);
+    font-size: 2rem;
+}
+
+li a:hover {
+    background: var(--fourth-color);
+    color: var(--third-color);
+}
+
+.Apropos-div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Project-div {
+
+}
+
+.Language-img_div {
+    display: flex;
+    justify-content: space-between;
+    margin: 7rem 20rem 7rem 5rem;
+}
+
+.Experience-div ul {
+    flex-direction: column;
+    width: 40%;
+}
+
+.Experience-div ul li {
+    font-size: 1.75rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2.5px;
+	border-radius: 25px;
+    border-color: var(--fourth-color);
+    background: var(--third-color);
+    color: var(--fourth-color);
+}
+
+.Footer-div {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
