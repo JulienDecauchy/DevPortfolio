@@ -8,6 +8,7 @@
 * {
     font-family: Merriweather;
 }
+
 body {
     background: var(--main-color);
     margin: 0;
@@ -21,6 +22,7 @@ header, footer {
 #Apropos, #Project, #Experience {
     margin-top: 5rem;
     margin-left: 12rem;
+    margin-bottom: 10rem;
 }
 
 #code {
@@ -54,7 +56,6 @@ h3 {
 
 p {
     font-size: 1.5rem;
-    font-style: light;
 }
 
 .header-nav_div {
@@ -123,8 +124,73 @@ li a:hover {
     margin-right: 2rem;
 }
 
-.Project-div {
+.Project-title_div h2 {
+    text-align: center;
+}
 
+.gallery-project_div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-div {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+    background: var(--second-color);
+    width: 30%;
+    height: 35rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+
+.project-title_div {
+    background: var(--fourth-color);
+}
+
+.project-title_div p {
+    margin-top: 0;
+    margin-left: 2rem;
+    color: var(--third-color);
+    padding: 0.5rem;
+}
+
+.project-content_div {
+    width: 80%;
+    margin: 0.5rem 0rem 0.5rem 3rem;
+}
+
+.project-content_div p {
+    font-size: 1.25rem;
+}
+
+.project-content_div hr {
+    margin-top: 1.25rem;
+}
+
+.project-content_div a {
+    color: var(--fourth-color);
+    font-weight: bold;
+}
+
+.project-picture_div {
+    width: 90%;
+    height: 10rem;
+    padding-left: 1rem;
+}
+
+.project-picture_div img {
+    object-fit: fill;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.project-text_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .Language-div {
@@ -190,4 +256,50 @@ li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media all and (max-width: 425px) {
+    h1 {
+        margin: 0rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .header-nav_div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    ul {
+        flex-direction: column;
+    }
+    ul li {
+        padding-top: 1.2rem;
+    }
+    li a {
+        font-size: 1.25rem;
+        margin-top: 0rem;
+        padding: 0.5rem;
+    }
+
+    #Apropos, #Project, #Experience {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .Apropos-div {
+        margin-left: 0.5rem;
+    }
+
+    .Apropos-content_div {
+        width: 87%;
+        height: 15rem;
+    }
+
 }
