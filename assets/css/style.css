@@ -1,8 +1,12 @@
 :root {
-    --main-color: #CDC8B0; /* var(--main-color) */
-    --second-color: #DAD4BB; /* var(--second-color)*/
-    --third-color: #B4AF9A; /* var(--third-color)*/
-    --fourth-color: #4E4B42; /*var(--fourth-color)*/
+    --main-color: #CDC8B0;
+    /* var(--main-color) */
+    --second-color: #DAD4BB;
+    /* var(--second-color)*/
+    --third-color: #B4AF9A;
+    /* var(--third-color)*/
+    --fourth-color: #4E4B42;
+    /*var(--fourth-color)*/
 }
 
 * {
@@ -15,11 +19,14 @@ body {
     max-width: 100%;
 }
 
-header, footer {
+header,
+footer {
     background: var(--second-color);
 }
 
-#Apropos, #Project, #Experience {
+#Apropos,
+#Project,
+#Experience {
     margin-top: 5rem;
     margin-left: 12rem;
     margin-bottom: 10rem;
@@ -96,7 +103,8 @@ li a:hover {
     flex-direction: column;
 }
 
-.Apropos-div p, h3 {
+.Apropos-div p,
+h3 {
     color: var(--fourth-color);
     margin-left: 5rem;
 }
@@ -111,7 +119,8 @@ li a:hover {
     height: 15rem;
 }
 
-.Apropos-content_div p, h3 {
+.Apropos-content_div p,
+h3 {
     color: var(--fourth-color);
     margin: 1.5rem 0rem 1rem 1.5rem;
 }
@@ -243,7 +252,7 @@ li a:hover {
     box-sizing: border-box;
     border-style: solid;
     border-width: 2.5px;
-	border-radius: 25px;
+    border-radius: 25px;
     border-color: var(--fourth-color);
     background: var(--third-color);
     color: var(--fourth-color);
@@ -256,37 +265,136 @@ li a:hover {
     align-items: center;
 }
 
-@media all and (max-width: 425px) {
+@media (max-width: 1490px) {
+    li a {
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
     h1 {
-        margin: 0rem;
+        margin-left: 0;
     }
-    h2 {
-        font-size: 1.5rem;
-    }
-    h3 {
-        font-size: 1rem;
-    }
-    p {
-        font-size: 1rem;
-    }
+
     .header-nav_div {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
+    ul {
+        padding-left: 0.5rem;
+    }
+
+    li a {
+        margin-right: 0.25rem;
+        padding: 1rem;
+        border-left-width: 5px;
+    }
+
+    #Apropos,
+    #Project,
+    #Experience {
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .Apropos-div {
+        margin-left: 1rem;
+    }
+
+    .Apropos-content_div {
+        width: 87%;
+        height: 15rem;
+    }
+
+    .gallery-project_div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.5rem;
+    }
+
+    .project-div {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .project-content_div {
+        margin-left: 2.5rem;
+    }
+
+    .Language-div h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .Language-img_div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem;
+    }
+
+    .Language-img_div div {
+        width: 50%;
+    }
+
+    .Experience-div ul {
+        width: 87%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    .Experience-div ul li {
+        font-size: 1.4rem;
+        margin: 1.5rem 0rem
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        margin: 0rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .header-nav_div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     ul {
         flex-direction: column;
     }
+
     ul li {
-        padding-top: 1.2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
     }
+
     li a {
         font-size: 1.25rem;
         margin-top: 0rem;
         padding: 0.5rem;
     }
 
-    #Apropos, #Project, #Experience {
+    #Apropos,
+    #Project,
+    #Experience {
         margin-top: 0.5rem;
         margin-left: 0.5rem;
         margin-bottom: 3.5rem;
@@ -300,41 +408,49 @@ li a:hover {
         width: 87%;
         height: 15rem;
     }
+
     .gallery-project_div {
         flex-direction: column;
         margin-left: 0.5rem;
     }
+
     .project-div {
         width: 87%;
     }
+
     .project-content_div {
         margin-left: 1.75rem;
     }
+
     .project-content_div p {
         font-size: 1rem;
     }
+
     .Language-div h2 {
         margin-left: 0;
         text-align: center;
     }
+
     .Language-img_div {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0rem;
     }
+
     .Language-img_div div {
         width: 50%;
     }
+
     .Experience-div ul {
         width: 87%;
         justify-content: center;
         align-items: center;
         padding-left: 1rem;
     }
+
     .Experience-div ul li {
         font-size: 1.4rem;
         margin: 1.5rem 0rem
     }
-
 }
