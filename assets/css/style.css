@@ -5,6 +5,9 @@
     --fourth-color: #4E4B42; /*var(--fourth-color)*/
 }
 
+* {
+    font-family: Merriweather;
+}
 body {
     background: var(--main-color);
     margin: 0;
@@ -32,18 +35,22 @@ a {
 h1 {
     margin-left: 5rem;
     font-size: 3rem;
+    font-style: italic;
 }
 
 h2 {
     font-size: 2.5rem;
+    font-style: bold;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    font-style: bold;
 }
 
 p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    font-style: light;
 }
 
 .header-nav_div {
@@ -119,7 +126,31 @@ li a:hover {
 .Language-img_div {
     display: flex;
     justify-content: space-between;
-    margin: 7rem 20rem 7rem 5rem;
+    flex-wrap: wrap;
+    margin: 5rem 5rem 7rem 5rem;
+}
+
+.Language-img_div p {
+    font-style: bold;
+    font-weight: 700;
+}
+
+.Language-img_div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 25px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    width: 15%;
+}
+
+.Language-img_div div:hover {
+    background: var(--third-color);
 }
 
 .Experience-div ul {
