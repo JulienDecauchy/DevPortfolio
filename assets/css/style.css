@@ -18,9 +18,13 @@ header, footer {
     background: var(--second-color);
 }
 
-section {
+#Apropos, #Project, #Experience {
     margin-top: 5rem;
     margin-left: 12rem;
+}
+
+#code {
+    margin-top: 5rem;
 }
 
 img {
@@ -123,11 +127,21 @@ li a:hover {
 
 }
 
+.Language-div {
+    background: var(--second-color);
+}
+
+.Language-div h2 {
+    margin-left: 12rem;
+    padding-top: 5rem;
+}
+
 .Language-img_div {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 5rem 5rem 7rem 5rem;
+    margin: 5rem 5rem 7rem 10rem;
+    padding-bottom: 5rem;
 }
 
 .Language-img_div p {
