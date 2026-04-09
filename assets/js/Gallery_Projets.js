@@ -1,51 +1,67 @@
 const projects = [
     {
         "id": 1,
-        "cover":"./assets/images/ohMyFood Front-page.png",
-        "title":"OhMyFood",
-        "description":"Integration d'un site qui répertorie les menus de restaurants gastronomiques.",
-        "skill":"Ce projet m'a permis de développer mes compétences en animations CSS.",
-        "weblink":"https://github.com/JulienDecauchy/-ohMyFood-JulienDecauchy.github.io",
+        "cover": "./assets/images/Leaulisse.webp",
+        "title": "Leaulisse",
+        "description": "Integration d'un site d'un chauffagiste indépendant.",
+        "skill": "Ce projet m'a permis de développer mes compétences en HTML et CSS.",
+        "weblink": "https://leaulisse.fr/",
     },
     {
         "id": 2,
-        "cover":"./assets/images/ArchiWebos Front-page.png",
-        "title":"ArchiWebos",
-        "description":"Integration du site portfolio d’une architecte d’intérieur.",
-        "skill":"Ce projet m'a permis de développer mes compétences en Javascript et de découvrir la méthode Kanban.",
-        "weblink":"https://github.com/JulienDecauchy/-ArchiWebos-JulienDecauchy.github.io",
+        "cover": "./assets/images/auFildeLaine.webp",
+        "title": "Au Fil De Laine",
+        "description": "Débogage et optimisation d'un site de vente de litterie.",
+        "skill": "Ce projet m'a permis de développer mes compétences en débugage de site internet et en référencement SEO.",
+        "weblink": "https://www.aufildelaine.com/",
     },
     {
         "id": 3,
-        "cover":"./assets/images/Kasa Front-page.png",
-        "title":"Kasa",
-        "description":"Integration d'une application web de location immobilière.",
-        "skill":"Ce projet m'a permis de développer mes compétences en React et de découvrir la méthode Kanban.",
-        "weblink":"https://github.com/JulienDecauchy/Kasa",
+        "cover": "./assets/images/ohMyFood Front-page.png",
+        "title": "OhMyFood",
+        "description": "Integration d'un site qui répertorie les menus de restaurants gastronomiques.",
+        "skill": "Ce projet m'a permis de développer mes compétences en animations CSS.",
+        "weblink": "https://github.com/JulienDecauchy/-ohMyFood-JulienDecauchy.github.io",
     },
     {
         "id": 4,
-        "cover":"./assets/images/NinaCarducci Front-page.png",
-        "title":"Nina Carducci",
-        "description":"Optimisation du référencement (SEO) d'un site de photographe.",
-        "skill":"Ce projet m'a permis de développer mes compétences en référencement SEO.",
-        "weblink":"https://github.com/JulienDecauchy/Ninacarducci",
+        "cover": "./assets/images/ArchiWebos Front-page.png",
+        "title": "ArchiWebos",
+        "description": "Integration du site portfolio d’une architecte d’intérieur.",
+        "skill": "Ce projet m'a permis de développer mes compétences en Javascript et de découvrir la méthode Kanban.",
+        "weblink": "https://github.com/JulienDecauchy/-ArchiWebos-JulienDecauchy.github.io",
     },
     {
         "id": 5,
-        "cover":"./assets/images/724events Front-page.png",
-        "title":"724events",
-        "description":"Débogage du site d'une agence d'événementiel.",
-        "skill":"Ce projet m'a permis de développer mes compétences en débugage de site internet.",
-        "weblink":"https://github.com/JulienDecauchy/724events",
+        "cover": "./assets/images/Kasa Front-page.png",
+        "title": "Kasa",
+        "description": "Integration d'une application web de location immobilière.",
+        "skill": "Ce projet m'a permis de développer mes compétences en React et de découvrir la méthode Kanban.",
+        "weblink": "https://github.com/JulienDecauchy/Kasa",
     },
     {
         "id": 6,
-        "cover":"./assets/images/ArgentBank Front-page.png",
-        "title":"ArgentBank",
-        "description":"Integration du front-end d'une application bancaire avec React-Redux.",
-        "skill":"Ce projet m'a permis de développer mes compétences en React et de découvrir React-Redux.",
-        "weblink":"https://github.com/JulienDecauchy/ArgentBank",
+        "cover": "./assets/images/NinaCarducci Front-page.png",
+        "title": "Nina Carducci",
+        "description": "Optimisation du référencement (SEO) d'un site de photographe.",
+        "skill": "Ce projet m'a permis de développer mes compétences en référencement SEO.",
+        "weblink": "https://github.com/JulienDecauchy/Ninacarducci",
+    },
+    {
+        "id": 7,
+        "cover": "./assets/images/724events Front-page.png",
+        "title": "724events",
+        "description": "Débogage du site d'une agence d'événementiel.",
+        "skill": "Ce projet m'a permis de développer mes compétences en débugage de site internet.",
+        "weblink": "https://github.com/JulienDecauchy/724events",
+    },
+    {
+        "id": 8,
+        "cover": "./assets/images/ArgentBank Front-page.png",
+        "title": "ArgentBank",
+        "description": "Integration du front-end d'une application bancaire avec React-Redux.",
+        "skill": "Ce projet m'a permis de développer mes compétences en React et de découvrir React-Redux.",
+        "weblink": "https://github.com/JulienDecauchy/ArgentBank",
     },
 ];
 
@@ -69,7 +85,7 @@ function RenderProjects() {
         const ProjectPictureDiv = document.createElement("div");
         ProjectPictureDiv.setAttribute("class", "project-picture_div");
         ProjectContentDiv.appendChild(ProjectPictureDiv)
-        
+
         const ProjectPicture = document.createElement("img");
         ProjectPicture.setAttribute("src", project.cover);
         ProjectPictureDiv.appendChild(ProjectPicture);
@@ -90,10 +106,10 @@ function RenderProjects() {
         ProjectTextDiv.appendChild(ProjectSkill);
 
         const ProjectLink = document.createElement("a");
-        ProjectLink.innerText = "Lien vers GitHub";
+        ProjectLink.innerText = "Lien vers le projet";
         ProjectLink.setAttribute("href", project.weblink);
         ProjectTextDiv.appendChild(ProjectLink);
-        
+
         ProjectElement.appendChild(ProjectTitleDiv);
         ProjectElement.appendChild(ProjectContentDiv);
 
